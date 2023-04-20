@@ -6,13 +6,13 @@
 /*   By: mbaptist <mbaptist@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 17:07:06 by mbaptist          #+#    #+#             */
-/*   Updated: 2023/04/19 16:07:06 by mbaptist         ###   ########.fr       */
+/*   Updated: 2023/04/20 10:40:59 by mbaptist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void ft_putnbr_pf(int n, long int *len)
+void	ft_putnbr_pf(int n, long int *len)
 {
 	if (n == -2147483648)
 	{

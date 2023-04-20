@@ -6,7 +6,7 @@
 /*   By: mbaptist <mbaptist@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:57:55 by mbaptist          #+#    #+#             */
-/*   Updated: 2023/04/18 17:13:41 by mbaptist         ###   ########.fr       */
+/*   Updated: 2023/04/20 10:36:04 by mbaptist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_putchar_pf(char c, long int *len)
 {
-	white(1, &c, 1);
+	write(1, &c, 1);
 	(*len)++;
 }
