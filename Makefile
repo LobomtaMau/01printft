@@ -6,7 +6,7 @@
 #    By: mbaptist <mbaptist@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/18 13:41:54 by mbaptist          #+#    #+#              #
-#    Updated: 2023/04/20 12:12:59 by mbaptist         ###   ########.fr        #
+#    Updated: 2023/04/20 17:19:33 by mbaptist         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,5 +36,10 @@ fclean: clean
 		$(RM) $(NAME)
 
 re: fclean all
+
+run:	re
+			$(CC) $(CFLAGS) main.c -L. -lftprintf
+			./a.out
+			rm -f a.out
 
 .PHONY: all clean fclean re
