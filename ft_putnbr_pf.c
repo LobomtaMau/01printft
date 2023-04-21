@@ -6,7 +6,7 @@
 /*   By: mbaptist <mbaptist@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 17:07:06 by mbaptist          #+#    #+#             */
-/*   Updated: 2023/04/20 10:40:59 by mbaptist         ###   ########.fr       */
+/*   Updated: 2023/04/20 15:39:00 by mbaptist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,10 @@ void	ft_putnbr_pf(int n, long int *len)
 		ft_putchar_pf('-', len);
 		ft_putnbr_pf(-n, len);
 	}
-	else if (n > 9)
+	else
 	{
-		ft_putnbr_pf(n / 10, len);
+		if (n > 9)
+			ft_putnbr_pf(n / 10, len);
 		ft_putchar_pf(n % 10 + '0', len);
 	}
 }

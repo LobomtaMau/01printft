@@ -6,7 +6,7 @@
 /*   By: mbaptist <mbaptist@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 17:14:01 by mbaptist          #+#    #+#             */
-/*   Updated: 2023/04/20 10:38:24 by mbaptist         ###   ########.fr       */
+/*   Updated: 2023/04/20 16:27:50 by mbaptist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putstr_pf(char *s, long int *len)
 {
 	if (!s)
-		s = "(NULL)";
+		s = "(null)";
 	while (*s)
 	{
 		ft_putchar_pf(*s, len);
